@@ -1,11 +1,26 @@
-import React from "react";
-import Card from "./components/Card/Card"
+import React, {useState} from "react";
+import CardBoard from "./components/CardBoard/CardBoard";
 import neptune from "./neptune.png"
 
+const initialCards = [
+   {
+      'name':'neptune',
+      'image': neptune
+   },
+]
+
+
+
+
+
 const App = () => {
+
+   const [cards, setCards] = useState(initialCards);
+
+
    return (
       <>
-         <Card image={neptune} name={"neptune"} />
+         <CardBoard cards={cards}/>
       </>
    );
 };
