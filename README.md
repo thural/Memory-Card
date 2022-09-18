@@ -1,2 +1,5 @@
-# CV-Application
-an application based on React for project assignment by theOdinProject
+# Memory Card
+a game written in React
+
+
+
