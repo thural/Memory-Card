@@ -3,17 +3,18 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   wrapper: {
-    width:'128px',
-    height:'150px',
+    width:'clamp(128px,15vw,384px)',
     border: 'black solid 1px',
     borderRadius: '16px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flexWrap: 'wrap',
+    backgroundColor: 'white',
     '& img':{
       maxWidth: '100%',
-      maxHeight: '100%'
+      maxHeight: '100%',
+      borderRadius: '16px'
     },
     '& .text': {
       borderTop: '1px solid black',
