@@ -4,14 +4,14 @@ import Card from "../Card/Card";
 
 const useStyles = createUseStyles({
   wrapper: {
-    margin:'32px',
+    diplay: 'grid',
+    gridTemplateColumns: 'repeat(3, minmax(128px, 150px))',
+    gridTemplateRows: 'repeat(auto-fill, auto)',
+    gap: '16px',
+    margin:'auto',
     padding:'16px',
     border: 'black solid 1px',
     borderRadius: '16px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexWrap: 'wrap',
     
   }
 })
