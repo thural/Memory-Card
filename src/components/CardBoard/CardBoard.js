@@ -5,15 +5,16 @@ import Card from "../Card/Card";
 const useStyles = createUseStyles({
   wrapper: {
     width: 'fit-content',
-    margin:'auto',
+    margin:'0px',
+    marginBottom: '24px',
     backgroundColor: 'deeppink',
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
     gridTemplateRows: 'repeat(3, 1fr)',
-    gap: '24px',
+    gap: 'clamp(24px, 3vmin, 4vmin)',
     justifyContent: 'center',
     justifyItems: 'center',
-    padding:'32px',
+    padding:'clamp(32px, 4vmin, 5vmin)',
     border: 'black solid 1px',
     borderRadius: '32px',
     

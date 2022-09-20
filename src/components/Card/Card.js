@@ -3,7 +3,7 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   wrapper: {
-    width:'clamp(128px,15vw,384px)',
+    width:'clamp(128px,9vmax,512px)',
     border: 'black solid 1px',
     borderRadius: '16px',
     display: 'flex',
@@ -22,6 +22,7 @@ const useStyles = createUseStyles({
     },
     '& h3': {
       textAlign:'center',
+      fontSize: 'clamp(12px, 3vmin, 5vmin)',
       margin: '0px'
     }
   }
