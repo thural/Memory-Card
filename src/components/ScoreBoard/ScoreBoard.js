@@ -10,7 +10,7 @@ const useStyles = createUseStyles(
       margin: '32px 0px 32px 32px',
     }
   }
-)
+);
 
 const ScoreBoard = ({scores}) => {
   

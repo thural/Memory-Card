@@ -16,7 +16,7 @@ const useStyles = createUseStyles(
       },
       '& h1': {
         margin: '0px',
-        fontSize: 'clamp(24px, 4vmin, 6vmin)'
+        fontSize: 'clamp(30px, 4vmin, 6vmin)'
       },
       '& h3': {
         margin: '0px',
@@ -24,7 +24,7 @@ const useStyles = createUseStyles(
       }
     }
   }
-)
+);
 
 
 

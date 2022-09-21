@@ -19,15 +19,15 @@ const useStyles = createUseStyles({
     borderRadius: '32px',
     
   }
-})
+});
 
-const CardBoard = ({ cards }) => {
+const CardBoard = ({ cards, handleCard }) => {
 
   const classes = useStyles();
   return (
     <div className={classes.wrapper}>
       {
-        cards.map(({ image, name }) => (<Card key={name} image={image} name={name} />))
+        cards.map(({ image, name }) => (<Card key={name} image={image} name={name} handleCard={handleCard}/>))
       }
     </div>
   )

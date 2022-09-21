@@ -26,12 +26,12 @@ const useStyles = createUseStyles({
       margin: '0px'
     }
   }
-})
+});
 
-const Card = ({image, name}) => {
+const Card = ({image, name, handleCard}) => {
   const classes = useStyles()
   return (
-    <div className={classes.wrapper}>
+    <div id={name} className={classes.wrapper} onClick={(e) => {handleCard(name)}}>
       <img src={image}></img>
       <div className="text"><h3>{name}</h3></div>
     </div>
